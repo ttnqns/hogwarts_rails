@@ -1,0 +1,14 @@
+<h1 class="my-5">Hogwarts</h1>
+
+<div class="my-5">
+    <% @character.each do |s| %>
+        <div class="card border-secondary mb-3 " style="max-width: 18rem;">
+            <div class="card-body text-secondary">
+                <h5 class="card-title"><%=  s.name %></h5>
+                <p class="card-text"><%= s.location %></p>
+            </div>
+            <div class="card-footer bg-transparent border-secondary"><%= s.house %></div>
+        </div>
+    <% end %>
+</div>
+
